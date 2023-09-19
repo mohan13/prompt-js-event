@@ -1,5 +1,6 @@
 import React from 'react';
-import Useofhotjar from '@/moduels/use_hotjar';
+import Useofhotjar from '@/moduels/UsedHotjar/use_hotjar';
+import Useofimage from '@/moduels/UsedHotjar/images';
 
 const use_of_hotjar = () => {
   const data_n_info = [
@@ -18,7 +19,12 @@ const use_of_hotjar = () => {
         'The word comes form the Latin word information, meaning “formation or conception”',
     },
   ];
-  return <Useofhotjar data={data_n_info} />;
+  return (
+    <>
+      <Useofhotjar data={data_n_info} />
+      <Useofimage />
+    </>
+  );
 };
 
 export default use_of_hotjar;

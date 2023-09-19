@@ -1,7 +1,15 @@
 import React from 'react';
 import { RiArrowRightDoubleLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
-const Banner = ({ title, description }: { title: string; description: [] }) => {
+const Banner = ({
+  title,
+  description,
+  hotjar_image,
+}: {
+  title: string;
+  description: [];
+  hotjar_image: string;
+}) => {
   const variants = {
     open: {
       opacity: 0,
@@ -46,17 +54,21 @@ const Banner = ({ title, description }: { title: string; description: [] }) => {
           </div>
         </div>
 
-        <motion.div
-          initial={{ x: -250 }}
-          animate={{ x: -20 }}
-          className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-        >
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="/assets/logo.webp"
-          />
-        </motion.div>
+        {hotjar_image ? (
+          <motion.div
+            initial={{ x: -250 }}
+            animate={{ x: -20 }}
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+          >
+            <img
+              className="object-cover object-center rounded"
+              alt="hero"
+              src={hotjar_image}
+            />
+          </motion.div>
+        ) : (
+          ''
+        )}
       </div>
     </motion.div>
   );

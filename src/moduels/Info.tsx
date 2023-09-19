@@ -3,7 +3,11 @@ import Banner from '@/components/ReusableComponents/banner_1';
 const Information = ({ data }: { data: any }) => {
   return (
     <div>
-      <Banner title="What is Data and Information" description={data} />
+      <Banner
+        title="What is Data ?"
+        description={data}
+        hotjar_image="/assets/information.webp"
+      />
     </div>
   );
 };
