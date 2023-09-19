@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Router, { useRouter } from 'next/router';
 import { menu } from '../Constant/menu';
 const Navitems = () => {
+  const router = useRouter();
   return (
     <div className=" w-64 h-screen ">
       <div className="overflow-y-auto py-4 px-3 h-full bg-white border-r border-gray-200 ">
@@ -12,7 +13,9 @@ const Navitems = () => {
               <div key={item.id}>
                 <Link
                   href={item.url}
-                  className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100  group"
+                  className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 group ${
+                    router.pathname === item.url ? 'bg-gray-100' : ''
+                  }`}
                 >
                   <div className="ml-3">{item.title}</div>
                 </Link>
