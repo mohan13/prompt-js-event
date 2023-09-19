@@ -15,4 +15,39 @@ export const menu = [
     title: 'Introduction',
     url: '/intro',
   },
+  {
+    id: 3,
+    title: 'Data and Information',
+    url: '/info',
+  },
+  {
+    id: 4,
+    title: 'Information',
+    url: '/Information',
+  },
+  {
+    id: 5,
+    title: 'How to use Hotjar',
+    url: '/use_of_hotjar',
+  },
+  {
+    id: 6,
+    title: 'Feature',
+    url: '/feature',
+  },
+  {
+    id: 7,
+    title: 'Install Hotjar',
+    url: '/feature',
+  },
+  {
+    id: 8,
+    title: 'Demo',
+    url: '/feature',
+  },
+  {
+    id: 9,
+    title: 'Summary',
+    url: '/feature',
+  },
 ];

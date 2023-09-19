@@ -14,7 +14,8 @@ export const topics = [
       },
       {
         id: 1,
-        paragraph: 'Importance of Data ',
+        paragraph:
+          'Use of Data in Digital to improve Digital Customer Experience  ',
       },
       {
         id: 1,
@@ -28,6 +29,14 @@ export const topics = [
         id: 1,
         paragraph: 'Features of Hotjar ',
       },
+      {
+        id: 1,
+        paragraph: 'How to install Hotjar',
+      },
+      {
+        id: 1,
+        paragraph: 'Summary:What is Hotjar & What is It Used For?',
+      },
     ],
   },
   {
@@ -37,19 +46,16 @@ export const topics = [
     description: [
       {
         id: 1,
-        paragraph: 'Website Heatmaps & Behavior Analytics Tools',
+        paragraph:
+          'It tracks how visitors use and interact with your website or product',
       },
       {
         id: 2,
-        paragraph: 'a quick brown fox jumps over the lazy dogs.',
+        paragraph: 'Identify potential problems and make improvements',
       },
       {
         id: 2,
-        paragraph: 'a quick brown fox jumps over the lazy dogs.',
-      },
-      {
-        id: 2,
-        paragraph: 'a quick brown fox jumps over the lazy dogs.',
+        paragraph: 'user can give feedback',
       },
     ],
   },

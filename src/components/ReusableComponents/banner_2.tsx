@@ -16,7 +16,7 @@ const Banner = ({ title, description }: { title: string; description: [] }) => {
   };
   return (
     <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container  mx-auto grid grid-cols-1 md:grid-cols-2 px-5 py-24  items-center">
         <motion.div
           initial={{ y: '-100vh' }}
           animate={{ y: 0 }}
@@ -29,7 +29,7 @@ const Banner = ({ title, description }: { title: string; description: [] }) => {
             src="/assets/logo.webp"
           />
         </motion.div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <motion.h1
             initial={{ y: '100vh' }}
             animate={{ y: 0 }}
@@ -47,7 +47,7 @@ const Banner = ({ title, description }: { title: string; description: [] }) => {
                   whileInView="animate"
                   custom={index}
                   key={item.id}
-                  className="flex gap-2 items-center"
+                  className="flex gap-2 "
                 >
                   <RiArrowRightDoubleLine />
                   <div>{item.paragraph}</div>
