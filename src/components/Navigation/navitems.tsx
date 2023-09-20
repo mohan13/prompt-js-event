@@ -54,7 +54,7 @@ const Navitems = () => {
           </div>
         </div>
       )}
-      <div className="w-64 h-screen hidden md:block ">
+      <div className="w-64 h-screen sticky mx-auto hidden md:block ">
         <div className="overflow-y-auto flex py-4 px-3 h-full bg-white border-r border-gray-200 ">
           <div className="space-y-2">
             {menu?.map((item) => {

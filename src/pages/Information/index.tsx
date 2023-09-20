@@ -1,5 +1,5 @@
 import React from 'react';
-import Information from '@/moduels/Information';
+import Information from '@/moduels/Information/Information';
 const index = () => {
   const data_n_info = [
     {

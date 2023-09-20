@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { RiArrowRightDoubleLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 const Banner = ({
@@ -56,17 +57,13 @@ const Banner = ({
           </div>
         </div>
         {hotjar_image ? (
-          <motion.div
-            initial={{ x: -250, opacity: 0 }}
-            animate={{ x: -20, opacity: 15 }}
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-          >
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={hotjar_image}
-            />
-          </motion.div>
+          <Image
+            className="object-cover object-center rounded"
+            alt="hero"
+            src={hotjar_image}
+            width={500}
+            height={40}
+          />
         ) : (
           ''
         )}

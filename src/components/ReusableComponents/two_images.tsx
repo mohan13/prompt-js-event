@@ -1,19 +1,25 @@
 import React from 'react';
 
-const Two_images = () => {
+const Two_images = ({
+  first_image,
+  second_image,
+}: {
+  first_image: string;
+  second_image: string;
+}) => {
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="grid grid-cols-2 gap-2 mx-4">
       <div>
         <img
           className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+          src={first_image}
           alt=""
         />
       </div>
       <div>
         <img
           className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+          src={second_image}
           alt=""
         />
       </div>
