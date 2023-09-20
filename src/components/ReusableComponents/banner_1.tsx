@@ -57,8 +57,8 @@ const Banner = ({
         </div>
         {hotjar_image ? (
           <motion.div
-            initial={{ x: -250 }}
-            animate={{ x: -20 }}
+            initial={{ x: -250, opacity: 0 }}
+            animate={{ x: -20, opacity: 15 }}
             className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
           >
             <img

@@ -5,11 +5,11 @@ const index = () => {
   const Introduction = [
     {
       id: 1,
-      paragraph: 'He there',
+      paragraph: 'Hi !',
     },
     {
       id: 2,
-      paragraph: 'I am a Frontend Web Devloper',
+      paragraph: 'I am a Frontend Web Developer',
     },
     {
       id: 3,
