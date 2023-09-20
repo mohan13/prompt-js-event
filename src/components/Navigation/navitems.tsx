@@ -21,12 +21,12 @@ const Navitems = () => {
           }}
         >
           {open ? (
-            <div className="h-8 w-8 transition delay-500 ease-in-out">
-              <FaStream className=" h-full w-full " />
-            </div>
-          ) : (
             <div className="h-8 w-8 transition delay-500">
               <FaTimes className="w-full h-full" />
+            </div>
+          ) : (
+            <div className="h-8 w-8 transition delay-500 ease-in-out">
+              <FaStream className=" h-full w-full " />
             </div>
           )}
         </button>
