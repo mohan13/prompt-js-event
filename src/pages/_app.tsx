@@ -5,7 +5,7 @@ import Layout from '@/HOC/layout';
 import Hotjar from '@hotjar/browser';
 import Head from 'next/head';
 export default function App({ Component, pageProps }: AppProps) {
-  const siteId = 3655935;
+  const siteId = 3661424;
   const hotjarVersion = 6;
   useEffect(() => {
     Hotjar.init(siteId, hotjarVersion);
