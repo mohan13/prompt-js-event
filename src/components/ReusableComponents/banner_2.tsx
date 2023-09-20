@@ -24,7 +24,7 @@ const Banner = ({
   };
   return (
     <section className="text-gray-600 body-font">
-      <div className="container  mx-auto grid grid-cols-1 md:grid-cols-2 px-5 py-24  items-center">
+      <div className=" w-full grid grid-cols-1 md:grid-cols-2 px-5 py-5 md:py-24 items-center">
         {hotjar_image ? (
           <motion.div
             initial={{ x: -250 }}
@@ -40,16 +40,16 @@ const Banner = ({
         ) : (
           ''
         )}
-        <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
           <motion.h1
             initial={{ y: '100vh' }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5 }}
-            className="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900"
+            className="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900"
           >
             {title}
           </motion.h1>
-          <div className="mb-8 text-xl leading-relaxed">
+          <div className="mb-8  leading-relaxed">
             {description?.map((item: any, index) => {
               return (
                 <motion.div
@@ -60,8 +60,10 @@ const Banner = ({
                   key={item.id}
                   className="flex gap-2 "
                 >
-                  <RiArrowRightDoubleLine />
-                  <div>{item.paragraph}</div>
+                  <div>
+                    <RiArrowRightDoubleLine className="h-8 w-8" />
+                  </div>
+                  <div className="text-2xl">{item.paragraph}</div>
                 </motion.div>
               );
             })}

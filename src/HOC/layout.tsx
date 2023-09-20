@@ -2,7 +2,7 @@ import React from 'react';
 import Toolbar from '@/components/Navigation/navitems';
 const layout = ({ children }: { children: any }) => {
   return (
-    <div className="flex w-full">
+    <div className="flex-none md:flex w-full">
       <div>
         <Toolbar />
       </div>

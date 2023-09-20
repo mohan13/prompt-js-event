@@ -1,23 +1,38 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Router, { useRouter } from 'next/router';
-import { FiMenu } from 'react-icons/fi';
+import { useRouter } from 'next/router';
+import { FaStream, FaTimes } from 'react-icons/fa';
 import { menu } from '../Constant/menu';
+
 const Navitems = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (
     <>
-      <button
-        className="border-2 border-black m-2 p-2"
-        onClick={() => {
-          setOpen(!open);
-        }}
-      >
-        <FiMenu className="h-10 w-10" />
-      </button>
+      <div className="flex md:hidden justify-between items-center bg-gray-200 w-full px-4">
+        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          PrompJS
+        </span>
+
+        <button
+          className="block md:hidden first-letter:border-2 border-black my-2 py-2"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          {open ? (
+            <div className="h-8 w-8 transition delay-500 ease-in-out">
+              <FaStream className=" h-full w-full " />
+            </div>
+          ) : (
+            <div className="h-8 w-8 transition delay-500">
+              <FaTimes className="w-full h-full" />
+            </div>
+          )}
+        </button>
+      </div>
       {open && (
-        <div className="w-64 h-screen z-10 absolute">
+        <div className="w-64 h-screen z-10 absolute ">
           <div className="overflow-y-auto flex py-4 px-3 h-full bg-white border-r border-gray-200 ">
             <div className="space-y-2">
               {menu?.map((item) => {
@@ -39,6 +54,27 @@ const Navitems = () => {
           </div>
         </div>
       )}
+      <div className="w-64 h-screen hidden md:block ">
+        <div className="overflow-y-auto flex py-4 px-3 h-full bg-white border-r border-gray-200 ">
+          <div className="space-y-2">
+            {menu?.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href={item.url}
+                    className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 group ${
+                      router.pathname === item.url ? 'bg-gray-100' : ''
+                    }`}
+                  >
+                    <div className="ml-3">{item.title}</div>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
