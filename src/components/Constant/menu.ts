@@ -38,16 +38,16 @@ export const menu = [
   {
     id: 7,
     title: 'Install Hotjar',
-    url: '/feature',
+    url: '/install',
   },
   {
     id: 8,
     title: 'Demo',
-    url: '/feature',
+    url: '/demo',
   },
   {
     id: 9,
     title: 'Summary',
-    url: '/feature',
+    url: '/summary',
   },
 ];

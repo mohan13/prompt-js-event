@@ -4,17 +4,19 @@ const index = () => {
   const data_n_info = [
     {
       id: 1,
-      paragraph: 'It is defined as “ news or knowledge received or given',
+      paragraph: 'Screen recordings',
     },
     {
       id: 2,
-      paragraph:
-        'It is what results when you have processed, interpreted, and organized facts.',
+      paragraph: 'Heatmaps',
     },
     {
       id: 3,
-      paragraph:
-        'The word comes form the Latin word information, meaning “formation or conception”',
+      paragraph: 'feeback and surveys',
+    },
+    {
+      id: 4,
+      paragraph: 'User interviews',
     },
   ];
   return <Information data={data_n_info} />;
