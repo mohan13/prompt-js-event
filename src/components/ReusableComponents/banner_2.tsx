@@ -24,7 +24,7 @@ const Banner = ({
   };
   return (
     <section className="text-gray-600 body-font">
-      <div className=" w-full grid grid-cols-1 md:grid-cols-2 px-5 py-5 md:py-24 items-center">
+      <div className=" w-full h-screen grid grid-cols-1 md:grid-cols-2 px-5 py-5 md:py-24 items-center">
         {hotjar_image ? (
           <motion.div
             initial={{ x: -250 }}

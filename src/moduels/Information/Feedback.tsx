@@ -13,7 +13,7 @@ const Feedback = () => {
     },
   ];
   return (
-    <>
+    <div>
       <Slides
         title="User Feeback and surveys (to learn what your users think"
         description={paragraph}
@@ -22,7 +22,7 @@ const Feedback = () => {
         first_image="/assets/recording.png"
         second_image="/assets/recording.png"
       />
-    </>
+    </div>
   );
 };
 export default Feedback;

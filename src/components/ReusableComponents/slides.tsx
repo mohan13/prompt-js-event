@@ -19,13 +19,13 @@ const Slides = ({
     }),
   };
   return (
-    <section className="text-gray-600 body-font">
-      <div className=" w-full h-screen px-5 py-5 md:py-24 items-center">
+    <section className="text-gray-600 body-font ">
+      <div className=" w-full px-5 pt-5 md:pt-24  items-center">
         <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
           <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900">
             {title}
           </h1>
-          <div className="mb-8  leading-relaxed">
+          <div>
             {description?.map((item: Iparagraph, index: number) => {
               return (
                 <motion.div

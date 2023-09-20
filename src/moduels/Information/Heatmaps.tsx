@@ -18,7 +18,7 @@ const Heatmaps = () => {
     },
   ];
   return (
-    <>
+    <div className="bg-green-400">
       <Slides
         title="Heatmaps (to visualize user behavior)"
         description={paragraph}
@@ -27,7 +27,7 @@ const Heatmaps = () => {
         first_image="/assets/recording.png"
         second_image="/assets/recording.png"
       />
-    </>
+    </div>
   );
 };
 export default Heatmaps;
