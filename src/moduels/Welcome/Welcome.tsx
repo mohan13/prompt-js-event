@@ -4,7 +4,7 @@ import React from 'react';
 const Welcome = ({ intropage }: { intropage: any }) => {
   return (
     <div>
-      <Banner title="Hello" description={intropage} />
+      <Banner title="Hello" description={intropage} hotjar_image="" />
     </div>
   );
 };
