@@ -39,7 +39,7 @@ export const menu = [
   {
     id: 7,
     title: 'Install Hotjar',
-    url: '/install',
+    url: '/install_hotjar',
   },
   {
     id: 8,
@@ -48,7 +48,7 @@ export const menu = [
   },
   {
     id: 9,
-    title: 'Summary',
-    url: '/summary',
+    title: 'End',
+    url: '/end',
   },
 ];
