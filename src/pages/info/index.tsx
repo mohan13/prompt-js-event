@@ -1,5 +1,6 @@
 import React from 'react';
-import Information from '@/moduels/Info';
+import Data from '@/moduels/what_is_data';
+import Information from '@/moduels/what_is_info';
 const index = () => {
   const data_n_info = [
     {
@@ -41,7 +42,12 @@ const index = () => {
         'The word comes form the Latin word information, meaning “formation or conception”',
     },
   ];
-  return <Information data={data_n_info} />;
+  return (
+    <>
+      <Data data={data_n_info} />
+      <Information data={info} />
+    </>
+  );
 };
 
 export default index;

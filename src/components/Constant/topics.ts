@@ -54,8 +54,8 @@ export const topics = [
         paragraph: 'Identify potential problems and make improvements',
       },
       {
-        id: 2,
-        paragraph: 'user can give feedback',
+        id: 3,
+        paragraph: 'It Helps identify weaknesses in design or usability ',
       },
     ],
   },

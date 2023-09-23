@@ -2,7 +2,7 @@ export const menu = [
   {
     id: 1,
     title: 'Wel-Come',
-    url: '/welcome',
+    url: '/title',
   },
 
   {
@@ -22,8 +22,8 @@ export const menu = [
   },
   {
     id: 4,
-    title: 'Information',
-    url: '/Information',
+    title: 'Use of Data ',
+    url: '/use_of_data',
   },
   {
     id: 5,
@@ -35,6 +35,7 @@ export const menu = [
     title: 'Feature',
     url: '/feature',
   },
+
   {
     id: 7,
     title: 'Install Hotjar',

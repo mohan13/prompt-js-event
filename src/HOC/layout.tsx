@@ -6,7 +6,7 @@ const layout = ({ children }: { children: any }) => {
       <div>
         <Toolbar />
       </div>
-      <div className="w-full">{children}</div>
+      <div className="w-full px-4">{children}</div>
     </div>
   );
 };

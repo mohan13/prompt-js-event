@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RiArrowRightDoubleLine } from 'react-icons/ri';
-import { Iparagraph } from '@/moduels/Information/recording';
+import { Iparagraph } from '@/moduels/Feature/recording';
 const Slides = ({
   title,
   description,

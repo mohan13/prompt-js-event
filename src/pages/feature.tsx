@@ -1,9 +1,11 @@
 import React from 'react';
-import Information from '@/moduels/Information/Information';
-import Recording from '@/moduels/Information/recording';
-import Interviews from '@/moduels/Information/Interviews';
-import Heatmaps from '@/moduels/Information/Heatmaps';
-import Feedback from '@/moduels/Information/Feedback';
+import Information from '@/moduels/Feature/Feature';
+import Features from '@/moduels/Feature/Index';
+// import Recording from '@/moduels/Feature/recording';
+// import Interviews from '@/moduels/Feature/Interviews';
+// import Heatmaps from '@/moduels/Feature/Heatmaps';
+// import Feedback from '@/moduels/Feature/Feedback';
+// import Slider from 'react-slick';
 const index = () => {
   const data_n_info = [
     {
@@ -26,10 +28,8 @@ const index = () => {
   return (
     <>
       <Information data={data_n_info} />
-      <Recording />
-      <Feedback />
-      <Heatmaps />
-      <Interviews />
+      <Features />
+      {/* <Sliding /> */}
     </>
   );
 };
