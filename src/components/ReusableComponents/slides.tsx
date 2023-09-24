@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RiArrowRightDoubleLine } from 'react-icons/ri';
-import { Iparagraph } from '@/moduels/Feature/recording';
+
 const Slides = ({
   title,
   description,
 }: {
   title: string;
-  description: Iparagraph[];
+  description: any;
 }) => {
   const variants = {
     open: {
@@ -26,7 +26,7 @@ const Slides = ({
             {title}
           </h1>
           <div>
-            {description?.map((item: Iparagraph, index: number) => {
+            {description?.map((item: any, index: number) => {
               return (
                 <motion.div
                   variants={variants}
