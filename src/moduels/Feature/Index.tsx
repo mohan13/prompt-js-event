@@ -18,7 +18,7 @@ const Index = () => {
     {
       id: 1,
       title: 'Screen Recordings',
-      first_image: '/assets/recordings.png',
+      first_image: '/assets/recordings.jpg',
       second_image: '/assets/record search.png',
       paragraph: [
         {
@@ -40,7 +40,7 @@ const Index = () => {
     {
       id: 2,
       title: 'HeatMaps',
-      first_image: '/assets/heatmaps.png',
+      first_image: '/assets/heatmaps.jpg',
       second_image: '/assets/heatmap-click.jpg',
       paragraph: [
         {

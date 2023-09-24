@@ -1,12 +1,15 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 const title = () => {
   return (
-    <div className="grid max-w-screen-xl  px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      {/* <div className="block md:hidden lg:mt-0 lg:col-span-5 lg:flex mb-4">
-        <img src="/assets/logo.webp" alt="mockup" />
-      </div> */}
-      <div className="mr-auto place-self-center lg:col-span-7">
+    <div className="w-full h-screen bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
+      <motion.div
+        initial={{ x: -250, opacity: 0 }}
+        animate={{ x: -20, opacity: 10 }}
+        transition={{ delay: 0.4 }}
+        className="mr-auto place-self-center lg:col-span-7"
+      >
         <h1 className="hidden md:block max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#ff8ba7]">
           Hotjar:
         </h1>
@@ -20,7 +23,7 @@ const title = () => {
             alt=""
           />
           <div>
-            <p className="text-lg font-medium leading-tight text-[#ff8ba7] dark:text-white">
+            <p className="text-lg font-medium leading-tight text-[#ff8ba7] ">
               Mohan Gurung
             </p>
             <p className="text-sm font-normal text-[#594a4e]">
@@ -28,10 +31,21 @@ const title = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="sm:hidden lg:mt-0 lg:col-span-5 lg:flex">
-        <img src="/assets/logo.webp" alt="mockup" />
-      </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ x: -250 }}
+        animate={{ x: -20 }}
+        className="lg:max-w-lg mx-auto mb-4 lg:w-full md:w-1/2 w-5/6"
+      >
+        <Image
+          className="object-cover object-center rounded"
+          alt="hero"
+          src="/assets/logo.webp"
+          width={500}
+          height={80}
+        />
+      </motion.div>
     </div>
   );
 };
