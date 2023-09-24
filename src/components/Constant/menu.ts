@@ -25,15 +25,16 @@ export const menu = [
     title: 'Use of Data ',
     url: '/use_of_data',
   },
-  {
-    id: 5,
-    title: 'How to use Hotjar',
-    url: '/use_of_hotjar',
-  },
+
   {
     id: 6,
     title: 'Feature',
     url: '/feature',
+  },
+  {
+    id: 5,
+    title: 'How to use Hotjar',
+    url: '/use_of_hotjar',
   },
 
   {
