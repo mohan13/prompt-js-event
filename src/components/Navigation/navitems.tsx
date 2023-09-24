@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaStream, FaTimes } from 'react-icons/fa';
 import { menu } from '../Constant/menu';
-
+import Footer from './footer';
 const Navitems = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -52,8 +52,8 @@ const Navitems = () => {
           </div>
         </div>
       )}
-      <div className="w-64 h-full mx-auto hidden md:block border-r-4 bg-[#faeee7] ">
-        <div className="overflow-y-auto flex py-4 px-3   ">
+      <div className="w-64 h-full  flex-col justify-between mx-auto hidden md:flex border-r-4 bg-[#faeee7] ">
+        <div className="overflow-y-auto flex py-4 px-3">
           <div className="space-y-2 ">
             <span className=" self-center flex gap-1 text-4xl mb-4 font-semibold whitespace-nowrap text-[#33272a]">
               Prompt<div className="text-[#ff8ba7] ">JS</div>
@@ -74,6 +74,9 @@ const Navitems = () => {
               );
             })}
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </>
