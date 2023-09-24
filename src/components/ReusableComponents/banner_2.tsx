@@ -24,7 +24,7 @@ const Banner = ({
   };
   return (
     <section className=" body-font">
-      <div className=" w-full h-screen bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
+      <div className="w-full h-1/2 md:h-screen bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
         {hotjar_image ? (
           <motion.div
             initial={{ x: -250 }}
@@ -47,7 +47,7 @@ const Banner = ({
             initial={{ y: '100vh' }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5 }}
-            className="title-font sm:text-6xl text-3xl mb-4 font-medium text-[#33272a]"
+            className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
           >
             {title}
           </motion.h1>
@@ -65,7 +65,7 @@ const Banner = ({
                   <div>
                     <RiArrowRightDoubleLine className="h-8 w-8 text-[#ff8ba7]" />
                   </div>
-                  <div className="text-2xl">{item.paragraph}</div>
+                  <div className="text-xl md:text-2xl">{item.paragraph}</div>
                 </motion.div>
               );
             })}

@@ -25,9 +25,9 @@ const Slides = ({
   };
   return (
     <section className="text-gray-600 body-font rounded-md bg-[#fffffe] ">
-      <div className=" w-full  md:p-5 my-10 items-center">
+      <div className="w-full md:p-5 my-10 items-center">
         <div className="lg:flex-grow flex flex-col md:items-start md:text-left items-center ">
-          <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-[#33272a]">
+          <h1 className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]">
             {title}
           </h1>
           <div>
@@ -44,7 +44,7 @@ const Slides = ({
                   <div>
                     <RiArrowRightDoubleLine className="h-8 w-8" />
                   </div>
-                  <div className="text-2xl">{item.detail}</div>
+                  <div className="text-xl sm:text-2xl">{item.detail}</div>
                 </motion.div>
               );
             })}

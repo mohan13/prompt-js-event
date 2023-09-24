@@ -9,7 +9,6 @@ const use_of_data = ({ data }: { data: any }) => {
         description={data}
         hotjar_image="/assets/Digital-Customer-Experience.webp"
       />
-      {/* <Two_images first_image="/assets/useofhotjar.png" second_image="" /> */}
     </div>
   );
 };
