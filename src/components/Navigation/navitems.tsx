@@ -9,13 +9,13 @@ const Navitems = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="flex md:hidden justify-between items-center bg-gray-200 w-full px-4">
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+      <div className="flex md:hidden justify-between items-center bg-[#faeee7] w-full px-4">
+        <span className="self-center text-2xl font-semibold whitespace-nowrap">
           PrompJS
         </span>
 
         <button
-          className="block md:hidden first-letter:border-2 border-black my-2 py-2"
+          className="block md:hidden first-letter:border-2 border-[#33272a] my-2 py-2"
           onClick={() => {
             setOpen(!open);
           }}
@@ -54,8 +54,8 @@ const Navitems = () => {
           </div>
         </div>
       )}
-      <div className="w-64 h-screen sticky mx-auto hidden md:block ">
-        <div className="overflow-y-auto flex py-4 px-3 h-full bg-white border-r border-gray-200 ">
+      <div className="w-64 h-screen mx-auto hidden md:block bg-[#faeee7] ">
+        <div className="overflow-y-auto flex py-4 px-3   ">
           <div className="space-y-2">
             {menu?.map((item) => {
               return (
@@ -63,8 +63,8 @@ const Navitems = () => {
                   <Link
                     onClick={() => setOpen(false)}
                     href={item.url}
-                    className={`flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 group ${
-                      router.pathname === item.url ? 'bg-gray-100' : ''
+                    className={`flex items-center p-2 text-base font-normal text-[#33272a] rounded-lg hover:bg-[#ffc6c7] group ${
+                      router.pathname === item.url ? 'bg-[#ffc6c7]' : ''
                     }`}
                   >
                     <div className="ml-3">{item.title}</div>

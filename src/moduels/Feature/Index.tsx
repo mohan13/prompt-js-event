@@ -102,14 +102,15 @@ const Index = () => {
   ];
 
   return (
-    <div>
+    <div className="">
       {features?.map((item: Ifeatures) => {
         return (
           <div key={item.id}>
-            <Slides title={item.title} description={item.paragraph} />
-            <Two_images
-              first_image={item.first_image}
-              second_image={item.second_image}
+            <Slides
+              title={item.title}
+              description={item.paragraph}
+              image_one={item.first_image}
+              image_two={item.second_image}
             />
           </div>
         );

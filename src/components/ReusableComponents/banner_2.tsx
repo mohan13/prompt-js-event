@@ -23,7 +23,7 @@ const Banner = ({
     }),
   };
   return (
-    <section className="text-gray-600 body-font">
+    <section className=" body-font">
       <div className=" w-full h-screen grid grid-cols-1 md:grid-cols-2 px-5 py-5 md:py-24 items-center">
         {hotjar_image ? (
           <motion.div
@@ -47,11 +47,11 @@ const Banner = ({
             initial={{ y: '100vh' }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5 }}
-            className="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900"
+            className="title-font sm:text-6xl text-3xl mb-4 font-medium text-[#33272a]"
           >
             {title}
           </motion.h1>
-          <div className="mb-8  leading-relaxed">
+          <div className="mb-8  leading-relaxed text-[#594a4e]">
             {description?.map((item: any, index) => {
               return (
                 <motion.div
@@ -63,7 +63,7 @@ const Banner = ({
                   className="flex gap-2 "
                 >
                   <div>
-                    <RiArrowRightDoubleLine className="h-8 w-8" />
+                    <RiArrowRightDoubleLine className="h-8 w-8 text-[#ff8ba7]" />
                   </div>
                   <div className="text-2xl">{item.paragraph}</div>
                 </motion.div>

@@ -8,30 +8,29 @@ const Two_images = ({
   second_image: string;
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-2 mx-4 mt-8">
+    <div className="grid grid-cols-1 gap-2 px-4 mt-8 ">
       {first_image ? (
-        <div>
+        <picture>
           <img
             className="h-auto max-w-full rounded-lg"
             src={first_image}
             alt=""
           />
-        </div>
+        </picture>
       ) : (
         ''
       )}
       {second_image ? (
-        <div>
+        <picture>
           <img
             className="h-auto max-w-full rounded-lg"
             src={second_image}
             alt=""
           />
-        </div>
+        </picture>
       ) : (
         ''
       )}
-      ;
     </div>
   );
 };

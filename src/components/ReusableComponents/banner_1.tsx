@@ -25,18 +25,18 @@ const Banner = ({
     }),
   };
   return (
-    <motion.div className="text-gray-600 body-font">
-      <div className="w-full mx-auto flex px-5 py-5 md:py-24 md:flex-row flex-col items-center">
+    <motion.div className=" body-font">
+      <div className="w-full bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 pr-0 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 100 }}
             transition={{ delay: 0.8, type: 'spring', stiffness: 120 }}
-            className="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900"
+            className="title-font sm:text-5xl text-3xl mb-4 font-medium text-[#33272a]"
           >
             {title}
           </motion.div>
-          <div className="mb-8 leading-relaxed">
+          <div className="mb-8 leading-relaxed text-[#594a4e]">
             {description?.map((item: any, index) => {
               return (
                 <motion.div
@@ -48,7 +48,7 @@ const Banner = ({
                   className="flex gap-2"
                 >
                   <div>
-                    <RiArrowRightDoubleLine className="h-8 w-8" />
+                    <RiArrowRightDoubleLine className="h-8 w-8 text-[#ff8ba7]" />
                   </div>
                   <div className="text-2xl">{item.paragraph}</div>
                 </motion.div>

@@ -1,13 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RiArrowRightDoubleLine } from 'react-icons/ri';
+import Two_images from './two_images';
 
 const Slides = ({
   title,
   description,
+  image_one,
+  image_two,
 }: {
   title: string;
   description: any;
+  image_one: string;
+  image_two: string;
 }) => {
   const variants = {
     open: {
@@ -19,10 +24,10 @@ const Slides = ({
     }),
   };
   return (
-    <section className="text-gray-600 body-font ">
-      <div className=" w-full px-5 pt-5 md:pt-24  items-center">
-        <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
-          <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900">
+    <section className="text-gray-600 body-font rounded-md bg-[#fffffe] ">
+      <div className=" w-full  md:p-5 my-10 items-center">
+        <div className="lg:flex-grow flex flex-col md:items-start md:text-left items-center ">
+          <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-[#33272a]">
             {title}
           </h1>
           <div>
@@ -34,7 +39,7 @@ const Slides = ({
                   whileInView="animate"
                   custom={index}
                   key={item.id}
-                  className="flex gap-2 mt-2.5 "
+                  className="flex gap-2 mt-2.5 text-[#594a4e] "
                 >
                   <div>
                     <RiArrowRightDoubleLine className="h-8 w-8" />
@@ -45,6 +50,7 @@ const Slides = ({
             })}
           </div>
         </div>
+        <Two_images first_image={image_one} second_image={image_two} />
       </div>
     </section>
   );

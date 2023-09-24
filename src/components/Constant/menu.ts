@@ -43,12 +43,7 @@ export const menu = [
   },
   {
     id: 8,
-    title: 'Demo',
-    url: '/demo',
-  },
-  {
-    id: 9,
     title: 'End',
-    url: '/end',
+    url: '/demo',
   },
 ];

@@ -26,11 +26,13 @@ const index = () => {
     },
   ];
   return (
-    <>
-      <Information data={data_n_info} />
+    <div className="grid grid-cols-2">
+      <div className="grid">
+        <Information data={data_n_info} />
+      </div>
       <Features />
       {/* <Sliding /> */}
-    </>
+    </div>
   );
 };
 
