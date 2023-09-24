@@ -9,30 +9,28 @@ const Navitems = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="flex md:hidden justify-between items-center bg-[#faeee7] w-full px-4">
+      <div className="flex md:hidden justify-between items-center bg-[#fffffe] w-full px-4">
         <span className="self-center flex text-3xl font-semibold whitespace-nowrap text-[#33272a]">
           Prompt<div className=" text-[#ff8ba7] text-4xl">JS</div>
         </span>
 
         <button
-          className="block md:hidden  first-letter:border-2 border-[#33272a] my-2 py-2"
+          className="block md:hidden my-2 py-2"
           onClick={() => {
             setOpen(!open);
           }}
         >
-          {open ? (
-            <div className="h-8 w-8 transition delay-500">
-              <FaTimes className="w-full h-ful text-[#ff8ba7]" />
-            </div>
-          ) : (
-            <div className="h-8 w-8transition delay-500 ease-in-out">
+          <div className="h-8 w-8 transition delay-500">
+            {open ? (
+              <FaTimes className="w-full h-full text-[#ff8ba7]" />
+            ) : (
               <FaStream className="h-full w-full text-[#ff8ba7] " />
-            </div>
-          )}
+            )}
+          </div>
         </button>
       </div>
       {open && (
-        <div className="w-full flex flex-col items-center  h-screen  absolute z-10 bg-[#fffffe] ">
+        <div className="w-full flex flex-col items-center h-screen absolute z-10 bg-[#fffffe] ">
           <div className="overflow-y-auto flex py-4 px-3   ">
             <div className="space-y-2">
               {menu?.map((item) => {
@@ -54,9 +52,9 @@ const Navitems = () => {
           </div>
         </div>
       )}
-      <div className="w-64 h-screen mx-auto hidden md:block bg-[#faeee7] ">
+      <div className="w-64 h-full mx-auto hidden md:block border-r-4 bg-[#faeee7] ">
         <div className="overflow-y-auto flex py-4 px-3   ">
-          <div className="space-y-2">
+          <div className="space-y-2 ">
             <span className=" self-center flex gap-1 text-4xl mb-4 font-semibold whitespace-nowrap text-[#33272a]">
               Prompt<div className="text-[#ff8ba7] ">JS</div>
             </span>

@@ -29,7 +29,7 @@ const Banner = ({
           <motion.div
             initial={{ x: -250 }}
             animate={{ x: -20 }}
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+            className="lg:max-w-lg mx-auto mb-4 lg:w-full md:w-1/2 w-5/6"
           >
             <Image
               className="object-cover object-center rounded"
