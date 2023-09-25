@@ -1,6 +1,5 @@
 import React from 'react';
 import Useofhotjar from '@/moduels/UsedHotjar/use_hotjar';
-import Useofimage from '@/moduels/UsedHotjar/images';
 
 const use_of_hotjar = () => {
   const data_n_info = [
@@ -17,7 +16,6 @@ const use_of_hotjar = () => {
   return (
     <>
       <Useofhotjar data={data_n_info} />
-      <Useofimage />
     </>
   );
 };

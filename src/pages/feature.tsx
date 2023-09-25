@@ -30,7 +30,9 @@ const index = () => {
       <div>
         <Information data={data_n_info} />
       </div>
-      <Features />
+      <div className="">
+        <Features />
+      </div>
     </div>
   );
 };

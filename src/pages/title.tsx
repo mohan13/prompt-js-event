@@ -19,7 +19,7 @@ const title = () => {
         <div className="flex justify-end items-center gap-3">
           <img
             className="object-cover w-12 h-12 rounded-full shrink-0"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+            src="/assets/mohan.webp"
             alt=""
           />
           <div>

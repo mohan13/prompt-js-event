@@ -55,24 +55,24 @@ const Banner = ({
               );
             })}
           </div>
-          {hotjar_image ? (
-            <motion.div
-              initial={{ x: -250 }}
-              animate={{ x: -20 }}
-              className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 "
-            >
-              <Image
-                className="object-cover object-center rounded"
-                alt="hero"
-                src={hotjar_image}
-                width={500}
-                height={40}
-              />
-            </motion.div>
-          ) : (
-            ''
-          )}
         </div>
+        {hotjar_image ? (
+          <motion.div
+            initial={{ x: -250 }}
+            animate={{ x: -20 }}
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 "
+          >
+            <Image
+              className="object-cover object-center rounded"
+              alt="hero"
+              src={hotjar_image}
+              width={500}
+              height={40}
+            />
+          </motion.div>
+        ) : (
+          ''
+        )}
       </div>
     </motion.div>
   );

@@ -5,7 +5,7 @@ const install_hotjar = ({ data }: { data: any }) => {
   return (
     <div>
       <Banner
-        title="How to Install Hotjar"
+        title="How to Install Hotjar ?"
         description={data}
         hotjar_image=""
       />

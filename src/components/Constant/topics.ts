@@ -10,28 +10,28 @@ export const topics = [
       },
       {
         id: 1,
-        paragraph: 'What is Data and Information',
+        paragraph: 'What is Data and Information ?',
       },
       {
         id: 1,
         paragraph:
-          'Use of Data in Digital to improve Digital Customer Experience  ',
+          'Use of Data in Digital to improve Digital Customer Experience.  ',
       },
       {
         id: 1,
-        paragraph: 'What is Hotjar',
+        paragraph: 'What is Hotjar ?',
       },
       {
         id: 1,
-        paragraph: 'How to use Hotjar',
+        paragraph: 'How to use Hotjar ?',
       },
       {
         id: 1,
-        paragraph: 'Features of Hotjar ',
+        paragraph: 'Features of Hotjar. ',
       },
       {
         id: 1,
-        paragraph: 'How to install Hotjar',
+        paragraph: 'How to install Hotjar ?',
       },
       {
         id: 1,

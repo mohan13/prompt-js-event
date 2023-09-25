@@ -64,7 +64,7 @@ const Navitems = () => {
                   <Link
                     onClick={() => setOpen(false)}
                     href={item.url}
-                    className={`flex items-center p-2 text-base font-normal text-[#33272a] rounded-lg hover:bg-[#ffc6c7] group ${
+                    className={`flex items-center p-2 text-base font-normal text-[#33272a] transition ease-in-out duration-150 rounded-lg hover:bg-[#ffc6c7] group ${
                       router.pathname === item.url ? 'bg-[#ffc6c7]' : ''
                     }`}
                   >
