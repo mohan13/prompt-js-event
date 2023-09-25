@@ -19,7 +19,7 @@ const Index = () => {
       id: 1,
       title: 'Screen Recordings',
       first_image: '/assets/recordings.jpg',
-      second_image: '/assets/record search.png',
+      second_image: '',
       paragraph: [
         {
           id: 1,

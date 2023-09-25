@@ -20,7 +20,7 @@ const Banner = ({
       opacity: 5,
       x: 0,
       transition: {
-        delay: 0.3 * index,
+        delay: 0.06 * index,
       },
     }),
   };
@@ -31,7 +31,7 @@ const Banner = ({
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 100 }}
-            transition={{ delay: 0.8, type: 'spring', stiffness: 120 }}
+            transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
             className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
           >
             {title}
@@ -58,8 +58,9 @@ const Banner = ({
         </div>
         {hotjar_image ? (
           <motion.div
-            initial={{ x: -250 }}
-            animate={{ x: -20 }}
+            initial={{ x: -250, opacity: 0 }}
+            animate={{ x: -20, opacity: 50 }}
+            transition={{ delay: 0.06, type: 'spring', stiffness: 120 }}
             className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 "
           >
             <Image

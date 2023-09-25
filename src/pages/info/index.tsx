@@ -10,16 +10,12 @@ const index = () => {
     },
     {
       id: 2,
-      paragraph: 'It is a "facts and figure"',
+      paragraph: ' Unorganized "facts and figure"',
     },
-    {
-      id: 3,
-      paragraph: 'It is unorganized and raw facts',
-    },
+
     {
       id: 4,
-      paragraph:
-        'It can be a number, symbol, character, word, codes, graph, etc',
+      paragraph: 'It Can be Number, symbol, character, word, codes, graph, etc',
     },
     {
       id: 5,
@@ -29,12 +25,12 @@ const index = () => {
   const info = [
     {
       id: 1,
-      paragraph: 'It is defined as “ news or knowledge received or given',
+      paragraph: ' Defined as “ news or knowledge received or given',
     },
     {
       id: 2,
       paragraph:
-        'It is what results when you have processed, interpreted, and organized facts.',
+        'A results when you have processed, interpreted, and organized facts.',
     },
     {
       id: 3,

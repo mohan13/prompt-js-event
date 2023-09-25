@@ -4,7 +4,7 @@ const Information = ({ data }: { data: any }) => {
   return (
     <div>
       <Banner
-        title="What is Information ?"
+        title="What is Information?"
         description={data}
         hotjar_image="/assets/data-information.jpg"
       />

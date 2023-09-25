@@ -19,7 +19,7 @@ const Banner = ({
     animate: (index: number) => ({
       opacity: 5,
       y: 0,
-      transition: { delay: 0.2 * index },
+      transition: { delay: 0.05 * index },
     }),
   };
   return (
@@ -27,8 +27,9 @@ const Banner = ({
       <div className="w-full h-1/2 md:h-screen bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
         {hotjar_image ? (
           <motion.div
-            initial={{ x: -250 }}
-            animate={{ x: -20 }}
+            initial={{ y: 140, opacity: 0 }}
+            animate={{ y: 0, opacity: 50 }}
+            transition={{ delay: 0.2 }}
             className="lg:max-w-lg mx-auto mb-4 lg:w-full md:w-1/2 w-5/6"
           >
             <Image
@@ -44,9 +45,9 @@ const Banner = ({
         )}
         <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
           <motion.h1
-            initial={{ y: '100vh' }}
+            initial={{ y: -450 }}
             animate={{ y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.08 }}
             className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
           >
             {title}

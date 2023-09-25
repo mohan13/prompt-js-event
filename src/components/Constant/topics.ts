@@ -6,10 +6,6 @@ export const topics = [
     description: [
       {
         id: 1,
-        paragraph: 'Introduction',
-      },
-      {
-        id: 1,
         paragraph: 'What is Data and Information ?',
       },
       {
@@ -19,7 +15,7 @@ export const topics = [
       },
       {
         id: 1,
-        paragraph: 'What is Hotjar ?',
+        paragraph: 'Introduction of Hotjar ?',
       },
       {
         id: 1,
@@ -27,7 +23,7 @@ export const topics = [
       },
       {
         id: 1,
-        paragraph: 'Features of Hotjar. ',
+        paragraph: 'Four Core Features of Hotjar ',
       },
       {
         id: 1,
@@ -35,7 +31,7 @@ export const topics = [
       },
       {
         id: 1,
-        paragraph: 'Summary:What is Hotjar & What is It Used For?',
+        paragraph: 'Summary',
       },
     ],
   },
