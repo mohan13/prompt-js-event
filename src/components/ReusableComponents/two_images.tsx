@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 const Two_images = ({
   first_image,
   second_image,
@@ -8,7 +8,17 @@ const Two_images = ({
   second_image: string;
 }) => {
   return (
-    <div className="grid grid-cols-1 gap-2 px-4 mt-8 ">
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ rotate: 0, scale: 1, opacity: 50 }}
+      transition={{
+        delay: 0.4,
+        type: 'spring',
+        stiffness: 260,
+        damping: 20,
+      }}
+      className="grid grid-cols-1 gap-2 px-4 mt-8 "
+    >
       {first_image ? (
         <picture>
           <img
@@ -31,7 +41,7 @@ const Two_images = ({
       ) : (
         ''
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -24,12 +24,20 @@ const Slides = ({
     }),
   };
   return (
-    <section className="text-gray-600 body-font rounded-md bg-[#fffffe] ">
+    <motion.div
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      className="text-gray-600 body-font rounded-md bg-[#fffffe] "
+    >
       <div className="w-full grid grid-cols-2 md:p-5 my-10 items-center">
         <div className="lg:flex-grow flex flex-col md:items-start md:text-left items-center ">
-          <h1 className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 100, y: 0 }}
+            className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
+          >
             {title}
-          </h1>
+          </motion.h1>
           <div>
             {description?.map((item: any, index: number) => {
               return (
@@ -52,7 +60,7 @@ const Slides = ({
         </div>
         <Two_images first_image={image_one} second_image={image_two} />
       </div>
-    </section>
+    </motion.div>
   );
 };
 
