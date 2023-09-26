@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Data from '@/moduels/what_is_data';
 import Information from '@/moduels/what_is_info';
-const index = () => {
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+const Index = () => {
+  const [show, setShow] = useState(true);
   const data_n_info = [
     {
       id: 1,
@@ -38,12 +40,31 @@ const index = () => {
         'The word comes form the Latin word information, meaning “formation or conception”',
     },
   ];
+
   return (
     <>
-      <Data data={data_n_info} />
-      <Information data={info} />
+      <div className="flex items-center  ">
+        <div
+          onClick={() => {
+            setShow(true);
+          }}
+          className="text-[#ff8ba7] text-xl p-4 cursor-pointer"
+        >
+          <FaChevronLeft />
+        </div>
+        {show ? <Data data={data_n_info} /> : <Information data={info} />}
+
+        <div
+          onClick={() => {
+            setShow(false);
+          }}
+          className="text-[#ff8ba7]  text-xl p-4 cursor-pointer"
+        >
+          <FaChevronRight />
+        </div>
+      </div>
     </>
   );
 };
 
-export default index;
+export default Index;

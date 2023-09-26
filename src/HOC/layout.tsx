@@ -7,7 +7,7 @@ const layout = ({ children }: { children: any }) => {
       <div>
         <Toolbar />
       </div>
-      <div className="w-full px-4 bg-[#faeee7]">{children}</div>
+      <div className=" px-4 bg-[#faeee7]">{children}</div>
     </div>
   );
 };

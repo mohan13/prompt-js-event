@@ -52,7 +52,7 @@ const Navitems = () => {
           </div>
         </div>
       )}
-      <div className="w-64 h-full  flex-col justify-between mx-auto hidden md:flex border-r-4 bg-[#faeee7] ">
+      <div className="w-64 h-full flex-col justify-between mx-auto hidden md:flex border-r-4 bg-[#faeee7] ">
         <div className="overflow-y-auto flex py-4 px-3">
           <div className="space-y-2 ">
             <span className=" self-center flex gap-1 text-4xl mb-4 font-semibold whitespace-nowrap text-[#33272a]">

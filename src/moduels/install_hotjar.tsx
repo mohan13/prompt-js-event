@@ -7,11 +7,7 @@ const install_hotjar = ({ data }: { data: any }) => {
       <Banner
         title="How to Install Hotjar ?"
         description={data}
-        hotjar_image=""
-      />
-      <Two_images
-        first_image="/assets/package.png"
-        second_image="/assets/install.png"
+        hotjar_image="/assets/install.png"
       />
     </div>
   );

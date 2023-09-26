@@ -1,6 +1,7 @@
 import Slides from '@/components/ReusableComponents/slides';
 import Two_images from '@/components/ReusableComponents/two_images';
 import React from 'react';
+import Slider from 'react-slick';
 
 interface Ifeatures {
   id: number;
@@ -100,9 +101,15 @@ const Index = () => {
       ],
     },
   ];
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="">
+    <div className="mb-4 ">
       {features?.map((item: Ifeatures) => {
         return (
           <div key={item.id}>
