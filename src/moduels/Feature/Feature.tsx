@@ -5,7 +5,7 @@ const Feature = ({ data }: { data: any }) => {
   return (
     <div>
       <Banner
-        title="Hotjar features and why you would use them?"
+        title="4 core Hotjar features and Why you would use them"
         description={data}
         hotjar_image=""
       />

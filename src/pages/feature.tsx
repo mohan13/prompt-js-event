@@ -20,7 +20,7 @@ const Index = () => {
     },
     {
       id: 3,
-      paragraph: 'feeback and surveys',
+      paragraph: 'feedback and Surveys',
     },
     {
       id: 4,
