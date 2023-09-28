@@ -32,7 +32,7 @@ const Banner = ({
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 100 }}
             transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-            className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
+            className="sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
           >
             {title}
           </motion.div>

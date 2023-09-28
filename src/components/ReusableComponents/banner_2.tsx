@@ -43,12 +43,12 @@ const Banner = ({
         ) : (
           ''
         )}
-        <div className="lg:flex-grow lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
+        <div className="lg:flex-grow lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
           <motion.h1
             initial={{ y: -450 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.08 }}
-            className="title-font sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
+            className="sm:text-6xl text-2xl mb-4 font-medium text-[#33272a]"
           >
             {title}
           </motion.h1>

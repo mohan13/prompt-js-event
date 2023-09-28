@@ -44,14 +44,14 @@ const Index = () => {
 
   return (
     <>
-      <div className="flex items-center  ">
+      <div className="flex items-center ">
         <div
           onClick={() => {
             setShow(true);
           }}
           className="text-[#ff8ba7] text-xl p-4 cursor-pointer"
         >
-          <FaChevronLeft />
+          <FaChevronLeft className="h-7 w-7" />
         </div>
         {show ? <Data data={data_n_info} /> : <Information data={info} />}
 
@@ -59,9 +59,9 @@ const Index = () => {
           onClick={() => {
             setShow(false);
           }}
-          className="text-[#ff8ba7]  text-xl p-4 cursor-pointer"
+          className="text-[#ff8ba7] text-xl  cursor-pointer"
         >
-          <FaChevronRight />
+          <FaChevronRight className="h-7 w-7" />
         </div>
       </div>
     </>
