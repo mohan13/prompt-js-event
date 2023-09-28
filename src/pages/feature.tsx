@@ -2,11 +2,6 @@ import React, { useState } from 'react';
 import Information from '@/moduels/Feature/Feature';
 import Features from '@/moduels/Feature/Index';
 import Buttons from '@/components/ReusableComponents/buttons';
-// import Recording from '@/moduels/Feature/recording';
-// import Interviews from '@/moduels/Feature/Interviews';
-// import Heatmaps from '@/moduels/Feature/Heatmaps';
-// import Feedback from '@/moduels/Feature/Feedback';
-// import Slider from 'react-slick';
 const Index = () => {
   const [next, setNext] = useState(true);
   const data_n_info = [

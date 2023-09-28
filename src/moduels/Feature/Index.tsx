@@ -25,16 +25,12 @@ const Index = () => {
         {
           id: 1,
           detail:
-            'Its visualize at a glance how people are using your website.',
+            'Starts gathering screen recordings of individual visits to your site.',
         },
         {
           id: 2,
-          detail: 'Its highlights the most and least active areas',
-        },
-        {
-          id: 3,
           detail:
-            'Red means busy and blue means less active based on clicks, moves and scrolls.',
+            "It's detect and highlight things like frustrations (u-turns, inactivity, exits and engagements)",
         },
       ],
     },
@@ -62,7 +58,7 @@ const Index = () => {
     },
     {
       id: 3,
-      title: 'Feedback',
+      title: 'Feedback & Surveys',
       first_image: '/assets/hotjar-feedback.jpg',
       second_image: '/assets/deedback.webp',
 
