@@ -28,17 +28,17 @@ const Index = () => {
   const info = [
     {
       id: 1,
-      paragraph: ' Defined as “ news or knowledge received or given',
+      paragraph:
+        'The word comes form the Latin word information, meaning “formation or conception”',
     },
     {
       id: 2,
-      paragraph:
-        'A results when you have processed, interpreted, and organized facts.',
+      paragraph: 'Defined as “news or knowledge received or given"',
     },
     {
       id: 3,
       paragraph:
-        'The word comes form the Latin word information, meaning “formation or conception”',
+        'A results when you have processed, interpreted, and organized facts.',
     },
   ];
 
