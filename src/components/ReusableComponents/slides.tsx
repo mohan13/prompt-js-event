@@ -50,7 +50,7 @@ const Slides = ({
                   className="flex gap-2 mt-2.5 text-[#594a4e] "
                 >
                   <div>
-                    <RiArrowRightDoubleLine className="h-8 w-8" />
+                    <RiArrowRightDoubleLine className="h-8 w-8 text-[#ff8ba7]" />
                   </div>
                   <div className="text-xl sm:text-2xl">{item.detail}</div>
                 </motion.div>

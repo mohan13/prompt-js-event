@@ -30,7 +30,7 @@ const Index = () => {
         {
           id: 2,
           detail:
-            "It's detect and highlight things like frustrations (u-turns, inactivity, exits and engagements)",
+            "It's detect and highlight things like frustrations (u-turns, inactivity, exits) and Engagements(clicks, plays, actions).",
         },
       ],
     },
