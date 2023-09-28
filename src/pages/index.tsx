@@ -1,9 +1,9 @@
-import Welcome from '@/pages/welcome/index';
+import Title from '@/pages/title';
 
 export default function Home() {
   return (
     <>
-      <Welcome />
+      <Title />
     </>
   );
 }

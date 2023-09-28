@@ -15,10 +15,6 @@ const demo = () => {
           >
             (let's Go to the Demo)
           </Link>
-
-          <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900">
-            Summery:
-          </h1>
         </div>
       </div>
     </section>

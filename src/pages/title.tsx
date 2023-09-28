@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 const title = () => {
   return (
     <div className="w-full h-screen bg-[#faeee7] mx-auto flex px-5 py-5 md:pt-24 md:flex-row flex-col items-center">
@@ -17,17 +18,25 @@ const title = () => {
           Collect data to Enhance User Experience
         </p>
         <div className="flex justify-end items-center gap-3">
-          <img
+          <Image
             className="object-cover w-12 h-12 rounded-full shrink-0"
-            src="/assets/mohan.webp"
+            src="/assets/mohan.png"
             alt=""
+            width={100}
+            height={100}
           />
           <div>
             <p className="text-lg font-medium leading-tight text-[#ff8ba7] ">
               Mohan Gurung
             </p>
             <p className="text-sm font-normal text-[#594a4e]">
-              Frontend Developer at Skillprompt
+              Frontend Developer at{' '}
+              <Link
+                href="https://www.skillprompt.com"
+                className="text-[#31B991]"
+              >
+                Skillprompt
+              </Link>
             </p>
           </div>
         </div>
