@@ -17,7 +17,7 @@ const title = () => {
         <p className="max-w-2xl mb-6 font-light text-[#594a4e] lg:mb-8 text-xl md:text-4xl xl:text-5xl">
           Collect data to Enhance User Experience
         </p>
-        <div className="flex justify-end items-center gap-3">
+        <div className="flex justify-end items-center gap-3 mr-10">
           <Image
             className="object-cover w-12 h-12 rounded-full shrink-0"
             src="/assets/mohan.png"
@@ -30,10 +30,10 @@ const title = () => {
               Mohan Gurung
             </p>
             <p className="text-sm font-normal text-[#594a4e]">
-              Frontend Developer at{' '}
+              Frontend Developer at
               <Link
                 href="https://www.skillprompt.com"
-                className="text-[#31B991]"
+                className="text-[#31B991] ml-1"
               >
                 Skillprompt
               </Link>

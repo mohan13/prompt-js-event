@@ -4,11 +4,11 @@ import Information from '@/moduels/what_is_info';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const Index = () => {
   const [show, setShow] = useState(true);
+
   const data_n_info = [
     {
       id: 1,
-      paragraph:
-        'It comes from the Latin word datum, meaning “something given.”',
+      paragraph: 'Came from the Latin word datum, meaning “something given.”',
     },
     {
       id: 2,
@@ -17,7 +17,8 @@ const Index = () => {
 
     {
       id: 4,
-      paragraph: 'It Can be Number, symbol, character, word, codes, graph, etc',
+      paragraph:
+        'It Can be Number, symbol, character, word, codes, graph, etc.',
     },
     {
       id: 5,
