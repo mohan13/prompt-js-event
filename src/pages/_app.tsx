@@ -27,9 +27,10 @@ export default function App({ Component, pageProps }: AppProps) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2982443938868714"
           crossOrigin="anonymous"
         ></script>
-        <GoogleAnalytics gaId="G-9SLBEZKYBY" />
       </Head>
       <Layout>
+        <GoogleAnalytics gaId="G-9SLBEZKYBY" />
+
         <Component {...pageProps} />
       </Layout>
     </>
