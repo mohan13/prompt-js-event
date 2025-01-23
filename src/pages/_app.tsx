@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import Layout from "@/HOC/layout";
 import Hotjar from "@hotjar/browser";
 import { hotjar_site_id, hotjar_version } from "@/config";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
 export default function App({ Component, pageProps }: AppProps) {
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2982443938868714"
           crossOrigin="anonymous"
         ></script>
+        <GoogleAnalytics gaId="G-9SLBEZKYBY" />
       </Head>
       <Layout>
         <Component {...pageProps} />
